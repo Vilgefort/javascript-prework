@@ -1,20 +1,10 @@
-var buttonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
-
-buttonRock = document.getElementById("button-rock");
-buttonPaper = document.getElementById("button-paper");
-buttonScissors = document.getElementById("button-scissors");
+const buttonPaper = document.getElementById("button-paper");
+const buttonRock = document.getElementById("button-rock");
+const buttonScissors = document.getElementById("button-scissors");
 
 function buttonClicked(buttonName) {
   clearMessages();
   console.log(buttonName + " został kliknięty");
-
-  var argComputerMove,
-    argMoveId,
-    argPlayerMove,
-    computerMove,
-    playerInput,
-    playerMove,
-    randomNumber;
 
   function getMoveName(argMoveId) {
     console.log("wywołano funkcję getMoveName z argumentem: " + argMoveId);
@@ -54,7 +44,7 @@ function buttonClicked(buttonName) {
     }
     printMessage("Zagrałem " + computerMove + ", a Ty " + playerMove);
   }
-
+  let randomNumber, playerInput;
   console.log("wybór ruchu gracza to: " + playerInput);
   playerMove = buttonName;
   console.log("ruch gracza to: " + playerMove);
