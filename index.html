@@ -3,17 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kamień, papier, nożyce</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="buttons">
-        <button id="button-rock">Kamień</button>
-        <button id="button-paper">Papier</button>
-        <button id="button-scissors">Nożyce</button>
+    <header>
+      <div class="title">
+        <h1>Papier, kamień, nożyce</h1>
+        <h3>Zagraj!</h3>
       </div>
-      <div id="messages"></div>
-    </div>
+    </header>
+    <section class="game">
+      <div class="container">
+        <h2>Zasady gry</h2>
+        <div class="rules">
+          <p>
+            Ty i komputer wybieracie kamień, papier albo nożyce.
+          </p>
+          <p>Zwycięzcę wybieramy według następujących zasad:</p>
+          <p>Kamień tępi nożyce</p>
+          <p>Papier owija kamień</p>
+          <p>Nożyce tną papier</p>
+        </div>
+        <div id="buttons">
+          <button id="button-rock">
+            <i class="far fa-hand-rock"></i>Kamień
+          </button>
+          <button id="button-paper">
+            <i class="far fa-hand-paper"></i>Papier
+          </button>
+          <button id="button-scissors">
+            <i class="far fa-hand-scissors"></i>Nożyce
+          </button>
+        </div>
+        <div id="messages"></div>
+      </div>
+    </section>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
   </body>

@@ -1,0 +1,73 @@
+//Global
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Arial";
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+//Header
+header {
+  position: relative;
+  background-image: url("../images/axe-close-up-drill-909256.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 3px;
+    color: yellow;
+    h1 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+  }
+}
+
+//Game
+
+.game {
+  margin: 0 auto;
+  text-align: center;
+  h2 {
+    font-size: 2em;
+  }
+  .rules {
+    margin: 20px 0;
+    font-size: 1.4em;
+    p {
+      margin: 0.5em;
+    }
+  }
+  button {
+    width: 120px;
+    padding: 10px;
+    margin: 30px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    i {
+      padding-right: 5px;
+    }
+  }
+  .msg {
+    margin: 30px;
+    font-style: "Arial";
+  }
+}
